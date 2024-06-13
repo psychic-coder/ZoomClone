@@ -1,5 +1,14 @@
 import React, { ReactNode } from "react";
 import StreamVideoProvider from "../../../providers/streamClientProvider";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "RohRoom",
+  description: "Video Calling App",
+  icons:{
+    icon:"/icons/logo.svg"
+  }
+};
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
